@@ -7,7 +7,7 @@ import Router from '../router/Router'
 const Layout = () =>
 {
   return (
-    <div className='flex flex-col min-h-screen justify-between'>
+    <div className='flex flex-col min-h-screen '>
       <Navbar />
       <Router />
       {/* <Footer /> */}

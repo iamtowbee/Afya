@@ -14,9 +14,12 @@ module.exports = {
       backgroundImage: {
         'footer-bg': "url('./assets/hero-bg.png')"
       },
+      boxShadow: {
+        'accentued': '0px 13px 19px 0px rgba(0, 0, 0, 0.07);'
+      },
     },
     fontFamily: {
-      "Work-Sans": ["Work Sans", "sans-serif"],
+      "Work-Sans": ["Work Sans", "sans-serif"]
     },
     container: {
       center: true,
