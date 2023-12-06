@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Navbar from '../components/Navbar'
-// import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import Router from '../router/Router'
 
 const Layout = () =>
@@ -10,7 +10,7 @@ const Layout = () =>
     <div className='flex flex-col min-h-screen '>
       <Navbar />
       <Router />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
