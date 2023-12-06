@@ -19,7 +19,7 @@ const Navbar = () =>
           <li className='cursor-pointer hover:text-accent'><a href="#">Login</a></li>
         </ul>
 
-        <button type="button" className='bg-primary text-white hidden md:flex items-center gap-x-2 px-6 py-4 mr-2 rounded-lg font-medium uppercase hover:bg-secondary hover:shadow-lg'>
+        <button type="button" className='bg-primary text-white hidden md:flex items-center gap-x-2 px-6 py-4 mr-2 rounded-lg font-medium uppercase hover:bg-secondary hover:shadow-lg hover:text-dark'>
           <Link to="/" className='text-base font-bold leading-4'>Join Us</Link><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
         </button>
 
