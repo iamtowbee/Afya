@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import cta_image from "../assets/offer-cta-right.png"
 
 const Offer = () =>
 {
@@ -7,16 +8,16 @@ const Offer = () =>
     <>
       {/* What We Offer Section */}
       <section className='bg-white mb-8'>
-        <div className='container flex flex-col px-6 mx-auto lg:pt-32 mt-2 md:mt-4 space-y-0 md:space-y-0 md:space-x-10'>
+        <div className='container flex flex-col px-6 mx-auto lg:pt-32 mt-2 md:mt-4 gap-8'>
           {/* Section Title */}
-          <div className="flex flex-col space-y-6 md:space-y-10 my-8 md:my-16 items-center">
+          <div className="flex flex-col space-y-6 md:space-y-10 my-8 md:my-12 items-center">
             <h2 className='max-w-lg text-3xl md:text-5xl font-semibold text-center'>What We Offer</h2>
             <p className="max-w-3xl text-center text-dark text-lg md:text-xl leading-6 font-Work-Sans font-normal">
               A decentralized healthcare platform where you can control and manage your medical data with ease and complete privacy.</p>
           </div>
 
           {/* Section Cards */}
-          <div className='flex items-center justify-center gap-8'>
+          <div className='flex items-center justify-center gap-8 overflow-scroll'>
             {/* Card 1 */}
             <div className='flex justify-center items-center gap-7 shrink-0'>
               <div className='group flex flex-col items-center justify-center w-96 h-96 p-8 shrink-0 bg-secondary hover:bg-primary rounded-2xl gap-9'>
@@ -27,7 +28,7 @@ const Offer = () =>
                   <p className="font-semibold text-md text-2xl">Seamless PHR Management</p>
                   <p>You can manage, access, and securely store your personal health record (PHR) including your medical records, test results, treatment history, etc.</p>
                   <Link to="/" className='group/link transition-all duration-300 ease-in-out flex items-center justify-center gap-1 text-primary group-hover:text-white '>
-                    <p className='bg-left-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
+                    <p className='font-semibold bg-left-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </Link>
                 </div>
@@ -48,7 +49,7 @@ const Offer = () =>
                   <p className="font-semibold text-md text-2xl">Data Sharing and Exchange</p>
                   <p>You can selectively share your PHR with authorized healthcare providers, researchers, and third party entities based on your consent and preferences.</p>
                   <Link to="/" className='group/link transition-all duration-300 ease-in-out flex items-center justify-center gap-1 text-primary group-hover:text-white '>
-                    <p className='bg-left-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
+                    <p className='font-semibold bg-left-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </Link>
                 </div>
@@ -65,7 +66,7 @@ const Offer = () =>
                   <p className="font-semibold text-md text-2xl">Secure Access for Healthcare Providers</p>
                   <p>Healthcare professionals can securely access patients' personal health records (PHRs) including medical data, test results, treatment history, etc.</p>
                   <Link to="/" className='group/link transition-all duration-300 ease-in-out flex items-center justify-center gap-1 text-primary group-hover:text-white '>
-                    <p className='bg-right-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
+                    <p className='font-semibold bg-right-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </Link>
                 </div>
@@ -82,7 +83,7 @@ const Offer = () =>
                   <p className="font-semibold text-md text-2xl">Data and Privacy Protection</p>
                   <p>Our comprehensive data governance policies and procedures ensure superior data accuracy, integrity, and compliance with data privacy regulations.</p>
                   <Link to="/" className='group/link transition-all duration-300 ease-in-out flex items-center justify-center gap-1 text-primary group-hover:text-white '>
-                    <p className='bg-right-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
+                    <p className='font-semibold bg-right-bottom bg-gradient-to-r from-white to-secondary bg-[length:0%_2px] bg-no-repeat group-hover/link:bg-[length:100%_2px] transition-all duration-500 ease-out'>Learn More</p>
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </Link>
                 </div>
@@ -90,14 +91,31 @@ const Offer = () =>
             </div>
           </div>
           {/* End Section Cards */}
+        </div>
 
-          {/* CTA */}
-          <div className='flex items-center justify-between my-8'>
-            {/* Left CTA Text */}
-            <div>
-              <p className="w-12 h-[0.125rem] bg-primary"></p>
-              <h3 className='text-4xl'></h3>
-            </div>
+        {/* CTA*/}
+        <div className='flex items-center justify-evenly mt-12 p-6 bg-purple-50 w-full'>
+          {/* Left CTA Text */}
+          <div className='flex flex-col items-start justify-center gap-6 p-8 pl-12 max-w-md h-full'>
+            <p className="w-24 h-[0.35rem] rounded-md bg-primary"></p>
+            <h3 className='text-5xl font-bold leading-[1.15]'>Your Health Record, <br/>Your Rules</h3>
+            <p className='text-lg'>Create your personal health record today and access your data anywhere with ease and privacy.
+            </p>
+            <button type="button" className='bg-primary text-white px-9 py-3.5 rounded-md font-medium  hover:bg-secondary hover:text-dark hover:shadow-lg'><a href="#">Secure Your Data</a></button>
+          </div>
+
+          {/* Right CTA Image */}
+          <div className='w-1/2 h-full'>
+            <img src={cta_image} alt="Afya Signup CTA" className='w-full object-cover' />
+          </div>
+        </div>
+
+        {/* Newsletter */}
+        <div className='flex flex-col items-center justify-center p-16 gap-12 bg-primary rounded-t-lg'>
+          <h3 className='text-5xl text-white font-bold leading-[1.15]'>Join Our Newsletter</h3>
+          <div className='flex items-center justify-between gap-12 bg-[#F9F1FE] rounded-md'>
+            <input type="email" name="email" id="email" placeholder='Enter your email' className='bg-transparent p-4 ml-2 rounded-md border-none'/>
+            <button type="button" className='bg-primary text-white px-6 py-3.5 m-2 rounded-md font-medium  hover:bg-secondary hover:text-dark hover:shadow-lg hover:border-2 hover:border-primary'><a href="#">Subscribe</a></button>
           </div>
         </div>
       </section>
