@@ -53,7 +53,7 @@ const Footer = () =>
       </div>
       
       {/* Copyright */}
-      <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 bg-slate-100 px-6 py-2'>
+      <div className='flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:justify-between bg-slate-100 px-6 py-2'>
         <p>&copy; 2023 Afya Inc. All rights reserved.</p>
         <p>Made with &#10084; in NG</p>
       </div>
