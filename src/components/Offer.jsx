@@ -119,7 +119,7 @@ const Offer = () =>
           <h3 className='text-4xl md:text-5xl text-white font-bold leading-[1.15] text-center'>Join Our Newsletter</h3>
           <div className='flex items-center justify-between md:gap-12 bg-[#F9F1FE] rounded-md'>
             <input type="email" name="email" id="email" placeholder='Enter your email' className='bg-transparent md:p-4 ml-2 rounded-md border-none' />
-            <button type="button" className='bg-primary text-white px-1.5 md:px-6 py-2 md:py-3.5 m-1 md:m-2 rounded-md font-medium  hover:bg-secondary hover:text-dark hover:shadow-lg hover:border-2 hover:border-primary'><a href="#">Subscribe</a></button>
+            <button type="button" className='bg-primary text-white px-1.5 md:px-6 py-2 md:py-3.5 m-1 md:m-2 rounded-md font-medium border-2 hover:bg-secondary hover:text-dark hover:shadow-lg  hover:border-primary'><a href="#">Subscribe</a></button>
           </div>
         </div>
       </section>

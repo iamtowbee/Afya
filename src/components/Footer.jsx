@@ -42,7 +42,7 @@ const Footer = () =>
             </div>
             <div className='flex items-center justify-start gap-2  text-2xl'>
               <ion-icon name="location-outline"></ion-icon>
-              <Link to="/" className='text-base'>Marina Lagos, Nigeria 340241</Link>
+              <Link to="/" className='text-base'>Marina, Lagos, NG</Link>
             </div>
             <div className='flex items-center gap-2 text-2xl'>
               <ion-icon name="mail-outline"></ion-icon>
